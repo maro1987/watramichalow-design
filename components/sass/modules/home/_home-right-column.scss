@@ -1,0 +1,45 @@
+.home-right-column {
+  @include span(4 of 12 0);
+  height: 400px;
+}
+
+.home-right-column-asset {
+  position: relative;
+  display: block;
+  border-top: #000 2px solid;
+  height: 357px;
+  background-color: white;
+  width: 99%;
+  float: right;
+}
+
+.home-right-column-asset-header {
+  background-color: #006db9;
+  padding: 13px 15px;
+  display: block;
+  height: auto;
+}
+
+.home-right-column-asset-header-title {
+  display: block;
+  padding: 5px;
+  height: 47px;
+  text-transform: uppercase;
+  font-size: 31px;
+  color: #FFF;
+  font-family: $fontmpsecond;
+  line-height: 33px;
+  border: #000 0px solid;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.home-right-column-asset-description {
+  display: block;
+  padding: 5px 15px 10px 15px;
+  text-align: justify;
+  font-size: 15px;
+  color: #000;
+  font-family: $fontmpsecond;
+  line-height: 18px;
+}

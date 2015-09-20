@@ -1,0 +1,31 @@
+{
+  "name": "watramichalow-design",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maro1987/watramichalow-design.git"
+  },
+  "author": "Marek Kuncik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maro1987/watramichalow-design/issues"
+  },
+  "homepage": "https://github.com/maro1987/watramichalow-design#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-if": "^1.2.5",
+    "gulp-livereload": "^3.8.1",
+    "gulp-scss-lint": "^0.3.0",
+    "gulp-uglify": "^1.4.1",
+    "gulp-util": "^3.0.6"
+  }
+}

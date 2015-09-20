@@ -1,0 +1,61 @@
+header {
+  @include clearfix;
+  background-color: $dark;
+  color: $light;
+  position: relative;
+  width: 100%;
+}
+
+.header-content {
+  @include container;
+
+}
+
+.banner {
+  display: inline;
+  float: left;
+  padding-bottom: 2px;
+  padding-top: 10px;
+
+  p {
+    float: left;
+  }
+}
+
+.subnav {
+  padding: 10px;
+  right: 0;
+  text-align: right;
+
+  p {
+    @include inline-block;
+  }
+
+  ul {
+    display: inline;
+    position: relative;
+  }
+
+  li {
+    @include inline-block;
+    font-size: 11px;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+.mainnav {
+  bottom: -25px;
+  position: relative;
+  text-align: right;
+
+  li {
+    @include inline-block;
+    font-family: $fontmpsecond;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 0 2px 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

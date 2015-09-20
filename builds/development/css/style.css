@@ -1,0 +1,355 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'mp_scond';
+  src: url("../fonts/mp_scond.eot");
+  src: local("Γÿ║"), url("../fonts/mp_scond.woff") format("woff"), url("../fonts/mp_scond.ttf") format("truetype"), url("../fonts/mp_scond.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background-image: url("../images/common/tlo.jpg");
+  font: 1em/1.5em Tahoma, Verdana, Arial, Helvetica, Sans Serif;
+}
+
+header {
+  overflow: hidden;
+  *zoom: 1;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  width: 100%;
+}
+
+.header-content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-content:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.banner {
+  display: inline;
+  float: left;
+  padding-bottom: 2px;
+  padding-top: 10px;
+}
+.banner p {
+  float: left;
+}
+
+.subnav {
+  padding: 10px;
+  right: 0;
+  text-align: right;
+}
+.subnav p {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+.subnav ul {
+  display: inline;
+  position: relative;
+}
+.subnav li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-size: 11px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mainnav {
+  bottom: -25px;
+  position: relative;
+  text-align: right;
+}
+.mainnav li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-family: "mp_scond";
+  font-size: 15px;
+  font-weight: 100;
+  padding: 0 2px 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main {
+  overflow: hidden;
+  *zoom: 1;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+main:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.slideshow-container {
+  background-image: url("../images/lt.jpg");
+  border-top: #f60 4px solid;
+  display: block;
+  height: 430px;
+  position: relative;
+}
+
+.slideshow-overlay {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background-color: #000;
+  bottom: 0;
+  height: 135px;
+  position: absolute;
+  width: 100%;
+}
+
+.slide-info {
+  bottom: 5px;
+  height: 115px;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.slide-title {
+  color: #f90;
+  font-family: "mp_scond";
+  font-size: 33px;
+  line-height: 26px;
+  margin: 5px 15px;
+  text-transform: uppercase;
+  z-index: 100;
+}
+
+.slide-date {
+  color: #fff;
+  display: block;
+  font-family: "mp_scond";
+  font-size: 20px;
+  line-height: 20px;
+  margin: 5px 15px;
+}
+
+.slide-description {
+  color: #fff;
+  display: block;
+  font-family: "mp_scond";
+  font-size: 15px;
+  line-height: 18px;
+  margin: 5px 15px 10px;
+}
+
+.slide-more-button {
+  color: #f90;
+}
+
+.home-content {
+  padding-top: 10px;
+  width: 100%;
+  height: 500px;
+  display: block;
+  position: relative;
+}
+
+.home-left-column {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  height: 700px;
+  display: block;
+}
+
+.home-left-column-asset {
+  border-top: #000 2px solid;
+  background-image: url("../images/lt.jpg");
+  display: inline-block;
+  height: 357px;
+  width: 99%;
+  position: relative;
+}
+
+.home-left-column-asset-info {
+  background-color: #090;
+  padding: 7px 15px;
+  height: 20%;
+}
+
+.home-left-column-asset-info-date {
+  margin: 0px 15px;
+  font-size: 16px;
+  color: #FFF;
+  font-family: "mp_scond";
+  line-height: 20px;
+}
+
+.home-left-column-asset-info-title {
+  display: block;
+  margin: 5px 15px 5px 15px;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #FFF;
+  font-family: "mp_scond";
+  line-height: 28px;
+}
+
+.home-left-column-asset-image {
+  position: relative;
+  margin: 0;
+  height: 80%;
+  width: 100%;
+}
+
+.home-left-column-asset-overlay {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background-color: #000;
+  bottom: 0;
+  height: 90px;
+  position: absolute;
+  width: 100%;
+}
+
+.home-left-column-asset-description {
+  margin: 5px 15px 10px 15px;
+  font-size: 15px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  font-family: "mp_scond";
+  line-height: 18px;
+}
+
+.home-right-column {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  height: 400px;
+}
+
+.home-right-column-asset {
+  position: relative;
+  display: block;
+  border-top: #000 2px solid;
+  height: 357px;
+  background-color: white;
+  width: 99%;
+  float: right;
+}
+
+.home-right-column-asset-header {
+  background-color: #006db9;
+  padding: 13px 15px;
+  display: block;
+  height: auto;
+}
+
+.home-right-column-asset-header-title {
+  display: block;
+  padding: 5px;
+  height: 47px;
+  text-transform: uppercase;
+  font-size: 31px;
+  color: #FFF;
+  font-family: "mp_scond";
+  line-height: 33px;
+  border: #000 0px solid;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.home-right-column-asset-description {
+  display: block;
+  padding: 5px 15px 10px 15px;
+  text-align: justify;
+  font-size: 15px;
+  color: #000;
+  font-family: "mp_scond";
+  line-height: 18px;
+}

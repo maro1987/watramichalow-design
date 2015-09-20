@@ -1,0 +1,38 @@
+@include border-box-sizing;
+
+$susy: (
+        column: 12,
+        container: 1000px,
+        gutters: .25,
+        gutter-position: inside,
+);
+
+//Sizes
+$narrow: 400px;
+$small: 650px;
+$medium: 960px;
+$wide: 1200px;
+
+//Colors
+$dark: #000;
+$light: #fff;
+$slidecontainercordercolor: #f60;
+$slidetitlecolor: #f90;
+
+//Font
+@font-face {
+  font-family: 'mp_scond';
+  src: url('../fonts/mp_scond.eot');
+  src: local('☺'),
+  url('../fonts/mp_scond.woff') format('woff'),
+  url('../fonts/mp_scond.ttf') format('truetype'),
+  url('../fonts/mp_scond.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+$fontmpsecond: 'mp_scond';
+$fontfamily: Tahoma, Verdana, Arial, Helvetica, Sans Serif;
+
+$mainfont: 1em / 1.5em $fontfamily;

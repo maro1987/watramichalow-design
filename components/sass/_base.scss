@@ -1,0 +1,4 @@
+body {
+  @include background-image(url('../images/common/tlo.jpg'));
+  font: $mainfont;
+}
